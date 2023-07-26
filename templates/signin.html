@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-in Sign-Up</title>
+    <link rel="stylesheet" href="/static/style.css">
+    
+</head>
+<body>
+    <div class="container">
+        <div class="signin-signup">
+            <form action="/signin" method="post" id="loginForm" class="sign-in-form">
+                <h2 class="title">Sign In</h2>
+                <div class="inputfield">
+                    
+                    <input type="text" name = "username" placeholder="User Name">
+                </div>
+                <div class="inputfield">
+                    
+                    <input type="password" name = "password" placeholder="password">
+                </div>
+                <input type="submit" value="Login" class="btn">
+                <p class="account-text">Do'nt have an account? <a href="#" id="signupbtn">Sign Up</a> </p>
+            </form>
+            <form action="/signup" id="registerForm" method="post" class="sign-up-form">
+                <h2 class="title">Sign Up</h2>
+                <div class="inputfield">
+                    
+                    <input type="text" name = "username" placeholder="User Name">
+                </div>
+                <div class="inputfield">
+                    
+                    <input type="email" name = "email" placeholder="Email">
+                </div>
+                <div class="inputfield">
+                    
+                    <input type="password" name = "password" placeholder="password">
+                </div>
+                <input type="submit" value="Sign Up" class="btn">
+                <p class="account-text">Already have an account? <a href="#" id="signinbtn">Sign In</a> </p>
+            </form>
+
+        </div>
+        <div class="panels-container">
+            <div class="panel left-panel">
+                <div class="content">
+                    <h3>Sign In</h3>
+                    <p>If You want to Sign in Click the below button</p>
+                    <button class="btn" id="signin">Sign In</button>
+                </div>
+                <img src="/static/signin.svg"  class="image">
+            </div>
+            <div class="panel right-panel">
+                <div class="content">
+                    <h3>Sign Up</h3>
+                    <p>If You want to Sign Up Click the below button</p>
+                    <button class="btn" id="signup">Sign Up</button>
+                </div>
+                <img src="/static/signup.svg" class="image" >
+            </div>
+        </div>
+    </div>
+    <script src="/static/script.js"></script>
+</body>
+</html>
