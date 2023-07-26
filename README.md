@@ -1,6 +1,7 @@
 # codoid_project
 Technical round Task
-created a signin and signup page using jwt,restfull api,flask and mysql
+created a signin and signup page using jwt,restfull api,flask and mysql.
+
 The signin and signup are responsive to all device
 
 
